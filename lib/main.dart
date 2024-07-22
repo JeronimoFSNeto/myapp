@@ -10,9 +10,12 @@ class MyHome extends StatelessWidget {
         title: const Text('Apresentação'),
         backgroundColor: const Color(0xFF00903A),
       ),
-      body: const Center(
-        child: Text('Bem-vindo ao Flutter!'),
-      ),
+      drawer: Drawer(
+        backgroundColor: Colors.green[300],
+        child: const Column(
+          children: [Text('Menu 1 '), Text('Menu 2'), Text('Menu 3')],
+        ),
+      ),      
     );
   }
 }
