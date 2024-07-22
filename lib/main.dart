@@ -5,19 +5,19 @@ class MyHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Column(
+      children: [
+        Text('Olá Mundo 1'),
+        Text('Olá Mundo 2'),
+        Text('Olá Mundo 4'),
+      ],
+    );
   }
 }
 
 void main() {
   runApp(const MaterialApp(
     title: 'Apresentação',
-    home: Column(
-      children: [
-        Text('Olá Mundo 1'),
-        Text('Olá Mundo 2'),
-        Text('Olá Mundo 3'),
-      ],
-    ),
+    home: MyHome(),
   ));
 }
