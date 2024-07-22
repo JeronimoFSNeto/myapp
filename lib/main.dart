@@ -5,12 +5,14 @@ class MyHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text('Olá Mundo 1'),
-        Text('Olá Mundo 2'),
-        Text('Olá Mundo 4'),
-      ],
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Apresentação'),
+        backgroundColor: const Color(0xFF00903A),
+      ),
+      body: const Center(
+        child: Text('Bem-vindo ao Flutter!'),
+      ),
     );
   }
 }
